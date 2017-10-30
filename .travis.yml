@@ -1,7 +1,8 @@
 language: c
-sudo: false # only for faster builds
+
 script:
-  - gcc -Wall main.c -o main
+  - cmake CMakeLists.txt
+  - make
   - ./main
 
 
